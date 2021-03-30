@@ -1,6 +1,8 @@
 
 # Harmonie System Documentation  
 
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://hirlam.github.io/HarmonieSystemDocumentation/dev)
+
 
 :warning: This is a prototype. Any edits to the markdown pages will be overwritten by the trac wiki in the future.
 Currently the "Edit on Github" links to the trac wiki page (except for `index.md`).    
