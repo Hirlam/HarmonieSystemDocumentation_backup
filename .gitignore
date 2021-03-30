@@ -1,0 +1,9 @@
+.vscode/
+build/build.log
+# deps/wiki/
+docs/build/
+docs/wiki/
+Manifest.toml
+
+
+

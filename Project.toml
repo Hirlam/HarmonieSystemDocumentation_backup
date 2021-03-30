@@ -1,0 +1,4 @@
+name = "HarmonieSystemDocumentation"
+uuid = "41aa8bac-2f49-41dc-83f8-d44057843f23"
+authors = ["Roel Stappers <roels@met.no>"]
+version = "0.1.0"
