@@ -18,7 +18,7 @@ jobs:
       - name: Create fake Julia package
         run: |
           julia -e 'using Pkg; Pkg.generate("tmp/HarmonieSystemDocumentation")'   # will become "tmp/Harmonie"
-          mv tmp/HarmonieSystemDocuementation/* src/
+          mv tmp/HarmonieSystemDocumentation/* src/
       - name: Install dependencies
         run: julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
       - name: Build and deploy
