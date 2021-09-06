@@ -15,6 +15,10 @@ jobs:
       - uses: julia-actions/setup-julia@latest
         with:
           version: '1.6'
+      - name: Create fake Julia package
+        run: |
+          julia -e 'using Pkg; Pkg.generate("tmp/HarmonieSystemDocumentation")'   # will become "tmp/Harmonie"
+          mv tmp/HarmonieSystemDocumentation/src/* src/
       - name: Install dependencies
         run: julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
       - name: Build and deploy
